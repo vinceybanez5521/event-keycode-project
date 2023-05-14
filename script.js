@@ -1,4 +1,6 @@
 const onKeyDown = e => {
+    e.preventDefault();
+
     const keyObj = {
         key: e.key === " " ? "Space" : e.key.toUpperCase(),
         keyCode: e.keyCode,
